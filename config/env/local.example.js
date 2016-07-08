@@ -8,7 +8,7 @@
 
 module.exports = {
   db: {
-    uri: 'mongodb://localhost/local-dev',
+    uri: 'mongodb://localhost/companies',
     options: {
       user: '',
       pass: ''
