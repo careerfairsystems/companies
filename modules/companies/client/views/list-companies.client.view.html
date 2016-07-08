@@ -3,18 +3,23 @@
     <h1>Companies</h1>
   </div>
   <div class="list-group">
-    <a data-ng-repeat="company in vm.companies"
-       data-ui-sref="companies.view({ companyId: company._id })"
-       class="list-group-item">
-      <small class="list-group-item-text">
-        Posted on
-        <span data-ng-bind="company.created | date:'mediumDate'"></span>
-        by
-        <span data-ng-if="company.user" data-ng-bind="company.user.displayName"></span>
-        <span data-ng-if="!company.user">Deleted User</span>
-      </small>
-      <h4 class="list-group-item-heading" data-ng-bind="company.name"></h4>
-    </a>
+    <table class="table table-bordered table-hover table-condensed">
+      <tr style="font-weight: bold">
+        <td style="width:7%">Skapat</td>
+        <td style="width:20%">Namn</td>
+        <td style="width:5%"></td>
+      </tr>
+      <tr ng-repeat="c in vm.companies">
+        <td><span>{{ vm.dateFilter(c.created, 'yyyy-MM-dd') }}</span></td>
+        <td><span>{{ c.name }}</span></td>
+        <td style="white-space: nowrap">
+          <div class="buttons" ng-show="!rowform.$visible">
+            <a data-ui-sref="companies.view({ companyId: c._id })" class="btn btn-primary"><i class="glyphicon glyphicon-eye-open"></i></a>
+            <button class="btn btn-danger" ng-click="vm.removeCompany($index, vm.companies)"><i class="glyphicon glyphicon-trash"></i></button>
+          </div>  
+        </td>
+      </tr>
+    </table>
   </div>
   <div class="alert alert-warning text-center" data-ng-if="vm.companies.$resolved && !vm.companies.length">
     No Companies yet, why don't you <a data-ui-sref="companies.create">create one</a>?
