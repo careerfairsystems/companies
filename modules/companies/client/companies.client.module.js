@@ -1,5 +1,5 @@
 (function (app) {
   'use strict';
 
-  app.registerModule('companies');
+  app.registerModule('companies', ['datatables', 'datatables.buttons']);
 })(ApplicationConfiguration);
