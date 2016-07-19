@@ -1,6 +1,17 @@
 <section>
   <div class="page-header">
     <h1 data-ng-bind="vm.company.name"></h1>
+
+
+    <hr>
+    <h1>Fair-information</h1>
+    <div class="section">
+    <label for="description">Beskrivning</label>
+    <p name="description" data-ng-bind="vm.company.fair_info.description">
+    </p>
+    <label for="description">Fun facts</label>
+    <p name="description" data-ng-bind="vm.company.fair_info.funfacts">
+    </p>
   </div>
   <div class="pull-right"
        data-ng-show="vm.company.isCurrentUserOwner">
