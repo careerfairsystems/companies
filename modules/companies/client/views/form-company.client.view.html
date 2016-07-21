@@ -5,6 +5,7 @@
   <div class="col-md-12">
     <form name="vm.form.companyForm" class="form-horizontal" ng-submit="vm.save(vm.form.companyForm.$valid)" novalidate>
       <fieldset>
+        <!-- Name -->
         <div class="form-group" show-errors>
           <label class="control-label" for="name">Name</label>
           <input name="name" type="text" ng-model="vm.company.name" id="name" class="form-control" placeholder="Name" required>
@@ -12,6 +13,25 @@
             <p class="help-block error-text" ng-message="required">Company name is required.</p>
           </div>
         </div>
+        <!--  Fair information -->
+        <h2>Fair information</h2>
+        <!--  Description -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="description">Beskrivning</label>
+          <input name="description" type="text" ng-model="vm.company.fair_info.description" id="description" class="form-control">
+          <div ng-messages="vm.form.companyForm.description.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Description is required.</p>
+          </div>
+        </div>
+        <!--  Fun Fact -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="funfact">Fun fact</label>
+          <input name="funfact" type="text" ng-model="vm.company.fair_info.funfact" id="funfact" class="form-control">
+          <div ng-messages="vm.form.companyForm.funfact.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Fun fact is required.</p>
+          </div>
+        </div>
+        <!-- Submit buttons -->
         <div class="form-group">
           <button type="submit" class="btn btn-default">{{vm.company._id ? 'Update' : 'Create'}}</button>
         </div>
