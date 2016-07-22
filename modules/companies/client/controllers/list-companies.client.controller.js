@@ -14,9 +14,5 @@
 
     vm.companies = CompaniesService.query();
 
-    vm.removeCompany = function (index, companies) {
-      var a = 1;
-    };
-
   }
 })();
