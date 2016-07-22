@@ -31,6 +31,54 @@
             <p class="help-block error-text" ng-message="required">Fun fact is required.</p>
           </div>
         </div>
+        <!-- Facebook-link -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="facebook">Facebook-länk</label>
+          <input name="facebook" type="text" ng-model="vm.company.fair_info.facebook" id="facebook" class="form-control">
+          <div ng-messages="vm.form.companyForm.facebook.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Facebook link is required.</p>
+          </div>
+        </div>
+        <!-- Twitter-link -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="twitter">Twitter-länk</label>
+          <input name="twitter" type="text" ng-model="vm.company.fair_info.twitter" id="twitter" class="form-control">
+          <div ng-messages="vm.form.companyForm.twitter.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Twitter link is required.</p>
+          </div>
+        </div>
+        <!-- Youtube-link -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="youtube">Youtube-länk</label>
+          <input name="youtube" type="text" ng-model="vm.company.fair_info.youtube" id="youtube" class="form-control">
+          <div ng-messages="vm.form.companyForm.youtube.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Youtube link is required.</p>
+          </div>
+        </div>
+        <!-- Linkedin-link -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="linkedin">Linkedin-länk</label>
+          <input name="linkedin" type="text" ng-model="vm.company.fair_info.linkedin" id="linkedin" class="form-control">
+          <div ng-messages="vm.form.companyForm.linkedin.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Linkedin link is required.</p>
+          </div>
+        </div>
+        <!-- Email-link -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="email">Email-länk</label>
+          <input name="email" type="text" ng-model="vm.company.fair_info.email" id="email" class="form-control">
+          <div ng-messages="vm.form.companyForm.email.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Email link is required.</p>
+          </div>
+        </div>
+        <!-- Web-link -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="web">Web-länk</label>
+          <input name="web" type="text" ng-model="vm.company.fair_info.web" id="web" class="form-control">
+          <div ng-messages="vm.form.companyForm.web.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Web link is required.</p>
+          </div>
+        </div>
         <!-- Submit buttons -->
         <div class="form-group">
           <button type="submit" class="btn btn-default">{{vm.company._id ? 'Update' : 'Create'}}</button>
