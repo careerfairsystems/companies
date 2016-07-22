@@ -13,6 +13,76 @@
             <p class="help-block error-text" ng-message="required">Company name is required.</p>
           </div>
         </div>
+        <!-- Contact information -->
+        <h2>Contact information</h2>
+        <!-- Name -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="contactname">Contactperson</label>
+          <input name="contactname" type="text" ng-model="vm.company.contact.name" id="contactname" class="form-control">
+          <div ng-messages="vm.form.companyForm.contactname.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Contactperson is required.</p>
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="contactemail">Contactemail</label>
+          <input name="contactemail" type="text" ng-model="vm.company.contact.email" id="contactemail" class="form-control">
+          <div ng-messages="vm.form.companyForm.contactemail.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Contact email is required.</p>
+          </div>
+        </div>
+        <!-- Telephone -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="contacttelephone">Contacttelephone</label>
+          <input name="contacttelephone" type="text" ng-model="vm.company.contact.telephone" id="contacttelephone" class="form-control">
+          <div ng-messages="vm.form.companyForm.contacttelephone.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Contact telephone is required.</p>
+          </div>
+        </div>
+        <!-- Information -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="contactinfo">Contact information</label>
+          <input name="contactinfo" type="text" ng-model="vm.company.contact.information" id="contactinfo" class="form-control">
+          <div ng-messages="vm.form.companyForm.contactinfo.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Contact information is required.</p>
+          </div>
+        </div>
+        <!-- Invoice information -->
+        <h2>Invoice information</h2>
+        <!-- Address -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="address">Address</label>
+          <input name="address" type="text" ng-model="vm.company.invoice.address" id="address" class="form-control">
+          <div ng-messages="vm.form.companyForm.address.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Address is required.</p>
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="invoiceemail">Invoice email</label>
+          <input name="invoiceemail" type="text" ng-model="vm.company.invoice.email" id="invoiceemail" class="form-control">
+          <div ng-messages="vm.form.companyForm.invoiceemail.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Invoice email is required.</p>
+          </div>
+        </div>
+        <!-- Telephone -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="invoicetelephone">Invoice telephone</label>
+          <input name="invoicetelephone" type="text" ng-model="vm.company.invoice.telephone" id="invoicetelephone" class="form-control">
+          <div ng-messages="vm.form.companyForm.invoicetelephone.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Invoice telephone is required.</p>
+          </div>
+        </div>
+        <!-- Organisation number -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="orgnbr">Organisation number</label>
+          <input name="orgnbr" type="text" ng-model="vm.company.invoice.organisationnumber" id="orgnbr" class="form-control">
+          <div ng-messages="vm.form.companyForm.orgnbr.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Organisation number is required.</p>
+          </div>
+        </div>
+        <!-- Contract information -->
+        <h2>Contract information</h2>
         <!--  Fair information -->
         <h2>Fair information</h2>
         <!--  Description -->
