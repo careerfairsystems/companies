@@ -33,6 +33,12 @@ var CompanySchema = new Schema({
     organisationnumber: { type: String, default: '', trim: true },
     email: { type: String, default: '', trim: true }
   },
+  contract: [{
+    year: { type: Number }, 
+    kontaktsamtal: { type: Boolean, default: false }, 
+    monter_size: { type: String, enum: ['Normal', 'Big'] }, 
+    wants_extra: { type: Boolean, default: false }
+  }],
   fair_info: {
     description: { type: String, default: '', trim: true },
     funfacts: { type: String, default: '', trim: true },
