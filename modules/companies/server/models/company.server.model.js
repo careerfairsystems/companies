@@ -21,6 +21,18 @@ var CompanySchema = new Schema({
     default: '',
     trim: true
   },
+  contact: {
+    name: { type: String, default: '', trim: true },
+    email: { type: String, default: '', trim: true },
+    telephone: { type: String, default: '', trim: true },
+    information: { type: String, default: '', trim: true }
+  },
+  invoice: {
+    address: { type: String, default: '', trim: true },
+    telephone: { type: String, default: '', trim: true },
+    organisationnumber: { type: String, default: '', trim: true },
+    email: { type: String, default: '', trim: true }
+  },
   fair_info: {
     description: { type: String, default: '', trim: true },
     funfacts: { type: String, default: '', trim: true },
