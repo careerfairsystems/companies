@@ -41,7 +41,7 @@ var CompanySchema = new Schema({
   }],
   fair_info: {
     description: { type: String, default: '', trim: true },
-    funfacts: { type: String, default: '', trim: true },
+    funfact: { type: String, default: '', trim: true },
     facebook: { type: String, default: '', trim: true },
     twitter: { type: String, default: '', trim: true },
     youtube: { type: String, default: '', trim: true },
